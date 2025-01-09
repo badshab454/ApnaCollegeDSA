@@ -1,8 +1,10 @@
+//C Plus Plus Boolean
+
 #include <iostream>
-using namespace std;
+using namespace  std;
 
 int main() {
-    cout << "Hello, \n";
-    cout << "World!";
+    bool isFalse = true;
+    cout << isFalse << endl;
     return 0;
 }
