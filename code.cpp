@@ -1,10 +1,12 @@
-//C Plus Plus Boolean
+//cpp input
 
 #include <iostream>
-using namespace  std;
+using namespace std;
 
 int main() {
-    bool isFalse = true;
-    cout << isFalse << endl;
+    int age;
+    cout << "enter your age: ";
+    cin >> age;
+    cout << "Your age is: " << age << endl;
     return 0;
 }
