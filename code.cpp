@@ -1,11 +1,13 @@
-// cpp string
+// cpp user input string
 
 #include <iostream>
 using namespace std;
 
 int main() {
-    string txt = "Hello \"hi\" world";
     
-    cout << txt << "\n";
+    string firstName;
+    cout << "Enter your first name: ";
+    getline (cin, firstName);
+    cout << "Your name is: " << firstName;
     return 0;
 }
