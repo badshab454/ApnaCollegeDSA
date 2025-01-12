@@ -1,14 +1,11 @@
-// cpp operator
+// cpp string
 
 #include <iostream>
 using namespace std;
 
 int main() {
-    int a = 12;
-    int b = 10;
-    cout << "Sum is: " << a + b << endl;
-    cout << "Substract is: " << a - b << endl;
-    cout << "Product is: " << a * b << endl;
-    cout << "Division is: " << a / b << endl;
+    string txt = "Hello \"hi\" world";
+    
+    cout << txt << "\n";
     return 0;
 }
