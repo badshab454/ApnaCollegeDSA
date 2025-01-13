@@ -1,13 +1,11 @@
-// cpp user input string
+// cpp short hand if else
 
 #include <iostream>
 #include <cmath>
 using namespace std;
 
 int main() {
-    bool isCodingFun = true;
-    bool isFishTasty = false;
-    cout << isCodingFun << "\n";
-    cout << isFishTasty;
-    return 0;
+    int time = 20;
+    string result = (time < 18) ? "Good day boys." : "Good evening boys.";
+    cout << result;
 }
