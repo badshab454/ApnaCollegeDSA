@@ -1,13 +1,13 @@
 // cpp user input string
 
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main() {
-    
-    string firstName;
-    cout << "Enter your first name: ";
-    getline (cin, firstName);
-    cout << "Your name is: " << firstName;
+    bool isCodingFun = true;
+    bool isFishTasty = false;
+    cout << isCodingFun << "\n";
+    cout << isFishTasty;
     return 0;
 }
