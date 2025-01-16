@@ -1,10 +1,9 @@
-// cpp foreach loop
+// cpp for loop
 #include <iostream>
 using namespace std;
 
 int main() {
-  int value[2] = {1, 2};
-  for (int i : value) {
+  for (int i = 0; i <= 100; i += 10) {
     cout << i << " ";
   }
 }
