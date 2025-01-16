@@ -1,12 +1,10 @@
-// cpp nested loop
+// cpp foreach loop
 #include <iostream>
 using namespace std;
 
 int main() {
-  for (int i = 1; i <= 2; ++i) {
-    cout << "Outer: " << i << "\n";
-    for (int j = 1; j <= 3; ++j) {
-      cout << "Inner: " << j << "\n";
-    }
+  int value[2] = {1, 2};
+  for (int i : value) {
+    cout << i << " ";
   }
 }
