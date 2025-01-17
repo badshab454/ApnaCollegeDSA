@@ -1,9 +1,11 @@
-// cpp even numbers
+// cpp array and loops
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
-  for ( int i = 1; i <= 10; i += 2) {
-    cout << i << " ";
-  }
+  string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+  for (int i = 0; i < 4; i++) {
+    cout << i << " = " << cars[i] << endl;
+  } 
 }
