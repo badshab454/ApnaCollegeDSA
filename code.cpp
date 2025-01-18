@@ -1,11 +1,20 @@
-// cpp array and loops
+// cpp structure
+
 #include <iostream>
 #include <string>
 using namespace std;
 
 int main() {
-  string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
-  for (int i = 0; i < 4; i++) {
-    cout << i << " = " << cars[i] << endl;
-  } 
+  struct {
+    int myNum;
+    string myString;
+  } myStructure;
+
+  myStructure.myNum = 1;
+  myStructure.myString = "Hello World!";
+
+  cout << myStructure.myNum << "\n";
+  cout << myStructure.myString << "\n";
+  return 0;
 }
+
