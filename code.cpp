@@ -1,13 +1,17 @@
-// cpp pointers
+// cpp functions
 
 #include <iostream>
-#include <string>
 using namespace std;
 
-int main() {
-  string food = "Pizza";
-  string* ptr = &food;
-  cout << food << "\n";
-  cout << &food << "\n";
-  cout << ptr << "\n";
+void myFunction(string fname) {
+  cout << fname << " Hossain\n";
 }
+
+int main() {
+  myFunction("Badsha");
+  myFunction("Laila");
+
+
+}
+
+
