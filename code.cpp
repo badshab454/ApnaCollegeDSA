@@ -3,15 +3,11 @@
 #include <iostream>
 using namespace std;
 
-void myFunction(string fname) {
-  cout << fname << " Hossain\n";
+int myFunction(int x) {
+  return 5 + x;
 }
 
 int main() {
-  myFunction("Badsha");
-  myFunction("Laila");
-
-
+  cout << myFunction(3);
+  return 0;
 }
-
-
