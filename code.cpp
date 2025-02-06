@@ -1,16 +1,10 @@
-// cpp pass array functions
+// cpp ternary condition 
 
 #include <iostream>
 using namespace std;
 
-void myFunction(int myNumbers[5]) {
-  for (int i = 0; i < 5; i++) {
-    cout << myNumbers[i] << "\n";
-  }
-}
-
 int main() {
-  int myNumbers[5] = {10,20,20,40,50};
-  myFunction(myNumbers);
+  int n = -45;
+  cout << (n < 0 ? "negative" : "positive") << endl;
   return 0;
 }
