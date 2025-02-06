@@ -1,10 +1,13 @@
-// cpp ternary condition 
+// cpp while loop
 
 #include <iostream>
 using namespace std;
 
 int main() {
-  int n = -45;
-  cout << (n < 0 ? "negative" : "positive") << endl;
+  int n = 1;
+  while (n <= 5) {
+    cout << n << endl;
+    n++;
+  }
   return 0;
 }
