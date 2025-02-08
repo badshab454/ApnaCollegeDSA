@@ -1,14 +1,15 @@
-// cpp for loop
+// cpp while loop
 
 #include <iostream>
 using namespace std;
 
 int main() {
+  int i = 0;
   int n = 3;
   int sum = 0;
-  for (int i = 1; i <= n; i++) {
+  while (i <= n) {
     sum += i;
+    i++;
   }
-  cout << "sum = " << sum << endl;
-  return 0;
+  cout << "Sum = " << sum << endl;
 }
