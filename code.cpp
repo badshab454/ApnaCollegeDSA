@@ -1,15 +1,17 @@
-// cpp while loop
+// c plus plus function
 
 #include <iostream>
 using namespace std;
 
-int main() {
-  int i = 0;
-  int n = 3;
-  int sum = 0;
-  while (i <= n) {
-    sum += i;
-    i++;
+int minOfTwoNumbers(int num1, int num2) {
+  if (num1 < num2) {
+    return num1;
+  } else {
+    return num2;
   }
-  cout << "Sum = " << sum << endl;
+}
+
+int main() {
+  cout << "min no = " << minOfTwoNumbers(10, 2) << endl;
+  return 0;
 }
