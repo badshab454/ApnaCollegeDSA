@@ -1,6 +1,12 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Hello fucker!";
+    int a = 1;
+    int b = 2;
+    int temp = a;
+    a = b;
+    b = temp;
+
+    std::cout << temp;
     return 0;
 }
