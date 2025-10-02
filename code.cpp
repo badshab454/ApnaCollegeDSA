@@ -2,6 +2,8 @@
 using namespace std;
 
 int main() {
-    cout << "Hello World!" << endl; //this is newstart
+    float halfCards = 7  / 2.0;
+    cout << (halfCards > 3) << endl;
+    int a = 20;
     return 0;
 }
