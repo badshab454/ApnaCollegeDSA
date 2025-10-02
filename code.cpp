@@ -1,9 +1,13 @@
+//cpp condition
 #include <iostream>
 using namespace std;
 
 int main() {
-    float halfCards = 7  / 2.0;
-    cout << (halfCards > 3) << endl;
-    int a = 20;
+    int age = 8;
+    if (age >= 18) {
+        cout << "Can vote" << endl;
+    } else {
+        cout << "Can not vote" << endl;
+    }
     return 0;
 }
