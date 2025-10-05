@@ -3,11 +3,11 @@
 using namespace std;
 
 int main() {
-    int n = 1;
-    while (n <= 5) {
-        cout << n << endl;
-        n++;
+    int n = 5;
+    while (n >= 1) {
+        cout << n << " ";
+        n--;
     }
-    
+    cout << endl;
     return 0;
 }
