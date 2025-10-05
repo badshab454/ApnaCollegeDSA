@@ -1,11 +1,14 @@
-//cpp condition
+//cpp loops
 #include <iostream>
 using namespace std;
 
 int main() {
-    for (int num = 1; num <= 5; num++) {
-        cout << num << " ";      
+    int n = 3;
+    int sum = 0;
+    for (int i = 1; i <= n; i++) {
+        sum += i;
     }
-    cout << endl;
+    cout << sum << endl;
+    
     return 0;
 }
