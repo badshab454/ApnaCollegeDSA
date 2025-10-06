@@ -4,10 +4,9 @@ using namespace std;
 
 int main() {
     int i = 1;
-    while (i <= 5) {
-        cout << i << " ";
+    while (i <= 4) {
+        cout << "****" << endl;
         i++;
     }
-    cout << endl;
     return 0;
 }
