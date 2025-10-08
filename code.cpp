@@ -3,6 +3,7 @@
 using namespace std;
 
 int main() {
+    //Print the digits of a given number 
     int num = 10829;
     int sum = 0;
     while (num > 0) {
