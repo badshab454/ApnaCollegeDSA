@@ -1,15 +1,20 @@
-//cpp while loops
+//is prime number?
 #include <iostream>
 using namespace std;
 
 int main() {
-    //Print the reversed digits of a given number 
-    int num = 10829;
-    while (num > 0) {
-        int lastDigit = num % 10;
-        cout << lastDigit;
-        num = num / 10;
+    int num = 13;
+    bool isPrime = true;
+    for (int i = 2; i <= num - 1; i++) {
+        if (num % i == 0) {
+            isPrime = false;
+            break;
+        }
     }
-    cout << endl;
+    if (isPrime == true) {
+        cout << "Your number is prime: " << num << endl;
+    } else {
+        cout << "Your number is not prime: " << num << endl;
+    }
     return 0;
 }
