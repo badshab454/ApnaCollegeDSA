@@ -1,13 +1,11 @@
-// void function
+// array
 #include <iostream>
 using namespace std;
 
-void sayHello() {
-    cout << "Hello, fucker!" << endl;
-}
-
 int main() {
-    sayHello();
-    sayHello();
+    int marks[] = {1, 2, 3};
+    int len = sizeof(marks) / sizeof(int);
+    cout << len << endl;
+    
     return 0;
 }
