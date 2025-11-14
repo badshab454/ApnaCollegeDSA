@@ -1,17 +1,11 @@
-// Array
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main() {
-    int arr[] = {1, 9, 3, 4, 6};
-    int n = sizeof(arr) / sizeof(int);
-    int copyArr[n];
-    for (int i = 0; i < n; i++) {
-        int j = n - i - 1;
-        copyArr[i] = arr[j];
-    }
-    for (int i = 0; i < n; i++) {
-        cout << copyArr[i] << " ";
-    }
+    long long n, m, a;
+    cin >> n >> m >> a;
+    long long total = ceil((double)n / a) * ceil((double)m / a);
+    cout << total << endl;
     return 0;
 }
