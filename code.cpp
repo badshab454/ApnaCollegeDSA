@@ -1,11 +1,20 @@
 #include <iostream>
-#include <cmath>
+#include <string>
 using namespace std;
 
 int main() {
-    long long n, m, a;
-    cin >> n >> m >> a;
-    long long total = ceil((double)n / a) * ceil((double)m / a);
-    cout << total << endl;
+    int n;
+    cin >> n;
+    int x = 0;
+    while(n--) {
+        string s;
+        cin >> s;
+        if(s[1] == '+') {
+            x++;
+        } else {
+            x--;
+        }
+    }
+    cout << x << endl;
     return 0;
 }
