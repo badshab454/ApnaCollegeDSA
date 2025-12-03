@@ -1,20 +1,22 @@
+//A. Expression
 #include <iostream>
-#include <string>
+#include <algorithm>
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-    int x = 0;
-    while(n--) {
-        string s;
-        cin >> s;
-        if(s[1] == '+') {
-            x++;
-        } else {
-            x--;
-        }
-    }
-    cout << x << endl;
+    int a;
+    cin >> a;
+    int b;
+    cin >> b;
+    int c;
+    cin >> c;
+    int one = a + b + c;
+    int two = a + b * c;
+    int three = a * b + c;
+    int four = a * b * c;
+    int five = (a + b) * c;
+    int six  = a * (b + c);
+    int maximum = max({one, two, three, four, five, six});
+    cout << maximum << endl;
     return 0;
 }
