@@ -1,22 +1,27 @@
-//A. Expression
 #include <iostream>
+#include <vector> 
 #include <algorithm>
 using namespace std;
 
 int main() {
-    int a;
-    cin >> a;
-    int b;
-    cin >> b;
-    int c;
-    cin >> c;
-    int one = a + b + c;
-    int two = a + b * c;
-    int three = a * b + c;
-    int four = a * b * c;
-    int five = (a + b) * c;
-    int six  = a * (b + c);
-    int maximum = max({one, two, three, four, five, six});
-    cout << maximum << endl;
+    int n;
+    cin >> n;
+    vector<int> a(n);
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+    sort(a.rbegin(), a.rend());
+    int total = 0, coin = 0, mine =0;
+    for (int i = 0; i < n; i++) {
+        total += a[i];
+    }
+    for (int i = 0; i < n; i++) {
+        coin++;
+        mine += a[i];
+        if (mine > total - mine) {
+            break;
+        }
+    }
+    cout << coin << endl;
     return 0;
 }
